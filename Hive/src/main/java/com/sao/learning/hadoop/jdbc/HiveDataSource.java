@@ -18,7 +18,7 @@ import java.util.Properties;
  * Created by saopr on 4/19/2017.
  */
 @Component
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:hive.properties")
 @ConfigurationProperties(prefix = "datasource.hive")
 public class HiveDataSource extends DriverManagerDataSource {
 

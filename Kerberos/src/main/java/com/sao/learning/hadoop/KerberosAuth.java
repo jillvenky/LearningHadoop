@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.security.PrivilegedAction;
 import java.security.PrivilegedExceptionAction;
 
 /**
@@ -19,7 +18,7 @@ import java.security.PrivilegedExceptionAction;
  */
 
 @Component
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:kerberos.properties")
 @ConfigurationProperties(prefix = "kerberos")
 public class KerberosAuth {
 
