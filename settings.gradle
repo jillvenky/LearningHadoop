@@ -1,0 +1,10 @@
+rootProject.name = 'hadoop'
+include 'Kerberos'
+findProject(':Kerberos')?.name = 'kerberos'
+include 'Hive'
+findProject(':Hive')?.name = 'hive'
+include 'Spark'
+findProject(':Spark')?.name = 'spark'
+include 'Hdfs'
+findProject(':Hdfs')?.name = 'hdfs'
+
