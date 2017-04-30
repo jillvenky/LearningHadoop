@@ -67,7 +67,7 @@ public class KerberosAuth {
         }
     }
 
-    public Object authenticate(PrivilegedExceptionAction<?> action) {
+    public <T> T authenticate(PrivilegedExceptionAction<T> action) {
         UserGroupInformation ugi = authenticate();
         try {
             return ugi.doAs(action);
